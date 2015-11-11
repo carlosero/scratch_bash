@@ -1,6 +1,3 @@
-# DATABASE
-create database scratch_bash;
-
 # TABLE
 create table users (
   id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
