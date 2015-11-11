@@ -7,7 +7,7 @@
         <input id="user_password" name="user_password" class="form-control" placeholder="Password" required="" type="password">
         <input id="user_password_confirmation" name="user_password_confirmation" class="form-control" placeholder="Confirm Password" required="" type="password">
         <div class="center-block" style="width:181px; margin-top:10px;">
-            <a href="login.php" type="button" class="btn btn-default">CANCEL</a>
+            <a href="?action=login" type="button" class="btn btn-default">CANCEL</a>
             <button type="submit" class="btn btn-default">REGISTER</button>
         </div>
         <?php echo print_field_error($user, 'name'); ?><br/>
