@@ -1,6 +1,7 @@
 <?php
 require "models/user.php";
 require "libs/helper_methods.php";
+require "libs/randoms.php";
 session_start();
 
 class Controller {

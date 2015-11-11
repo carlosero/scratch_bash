@@ -22,7 +22,9 @@ Select your wager
 </select>
 <br/>
 Scratch Bash!</br>
-<img width="30" height="30"/><img width="30" height="30"/><img width="30" height="30"/>
+<div><?php echo getRandString(1, 1, 99, true); ?></div>
+<div><?php echo getRandString(1, 1, 99, true); ?></div>
+<div><?php echo getRandString(1, 1, 99, true); ?></div>
 <br/>
 Scratch bash and see if you stash!<br/>
 <a href="#">Add $10</a>
