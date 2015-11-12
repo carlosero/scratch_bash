@@ -34,4 +34,8 @@
     }
   }
 
+  function render_if_not($view, $condition) {
+    if (!$condition) { include $view; }
+  }
+
 ?>

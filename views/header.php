@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/credits.js"></script>
     <script Language="JavaScript">
     function solonumeros(e,idi) 
     {

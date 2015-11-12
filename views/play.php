@@ -1,7 +1,7 @@
 <div class="container Vblock">
     <div class="form-signin center-block Vcentered">
         <h2 class="form-signin-heading ">Welcome <?php echo $user->name; ?>! </h2>
-        <h3 class="form-signin-heading ">This is your available credits: $<?php echo $user->credits; ?>.</h3>
+        <h3 class="form-signin-heading ">This is your available credits: $<span id="user-credits"><?php echo $user->credits; ?></label>.</h3>
         <br/>
         <h4 class="form-signin-heading text-center">Pick up your 3 numbers</h4>
         <div class="center-block" style="width:270px; height:90px;">
@@ -27,7 +27,7 @@
         </div>
         <h4 class="form-signin-heading text-center">Scratch bash and see if you stash!</h4>
         <div class="center-block" style="width:215px; margin-top:25px;">
-            <a href="#" type="button" class="btn btn-default">ADD CREDITS</a>
+            <a href="#" type="button" class="btn btn-default" onclick="add_credits(10,'#user-credits');">ADD 10 CREDITS</a>
             <a href="?action=logoff" type="button" class="btn btn-default">LOG OFF</a>
         </div> 
         <div class="center-block" style="width:228px; margin-top:15px;">

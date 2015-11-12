@@ -6,6 +6,7 @@ session_start();
 
 class Controller {
   var $action;
+  var $actions_without_view = array("add_credits", "subtract_credits");
 
   function Controller() {
     if (isset($_REQUEST['action'])) {
@@ -31,7 +32,7 @@ class Controller {
       }
     }
     if (isset($_SESSION["user_id"])) {$user = User::find($_SESSION["user_id"]);}
-    include("views/header.php");
+    render_if_not("views/header.php", in_array($action, $this->actions_without_view));
     switch ($action) {
       case 'register':
           $user = new User();
@@ -78,10 +79,20 @@ class Controller {
           $user = new User();
           include("views/login.php");
           break;
+      case 'add_credits':
+          $credits = $_REQUEST["credits"];
+          $user->add_credits($credits);
+          echo $user->credits;
+          break;
+      case 'subtract_credits':
+          $credits = $_REQUEST["credits"];
+          $user->subtract_credits($credits);
+          echo $user->credits;
+          break;
       default:
           redirect("/");
     }
-    include("views/footer.php");
+    render_if_not("views/footer.php", in_array($action, $this->actions_without_view));
   }
 }
 ?>

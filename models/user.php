@@ -104,6 +104,12 @@ class User {
     $this->save();
   }
 
+  function subtract_credits($credits) {
+    $this->credits -= $credits;
+    if ($this->credits < 0) { $this->credits = 0; }
+    $this->save();
+  }
+
   function close_connection() {
     $this->conn->close_connection();
   }
