@@ -1,10 +1,10 @@
 <?php
 class Connection {
   # default
-  const SERVERNAME = "sql113.byethost7.com";
-  const USERNAME = "b7_16865768";
-  const PASSWORD = "17476948";
-  const DATABASE = "b7_16865768_scratch_bash";
+  const SERVERNAME = "localhost";
+  const USERNAME = "ShoutzDev";
+  const PASSWORD = "SQL@cc3ss";
+  const DATABASE = "rfsidedev";
   private $conn;
 
   function Connection() {
